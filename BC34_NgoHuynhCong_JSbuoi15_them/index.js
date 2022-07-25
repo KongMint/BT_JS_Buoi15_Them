@@ -23,17 +23,21 @@ document.getElementById("tinhTienTR").onclick = function () {
     soTienThue = (soTR - 4e6 - soNguoiPhuThuoc) * 0.35;
   }
 
-  // format vnđ
   var format = new Intl.NumberFormat("vn-VN");
   var soTienThueVND = format.format(soTienThue) + " vnd";
   // Đầu ra
   document.getElementById("thongBao").innerHTML = soTienThueVND;
 };
 
+
+
+
+
 // Bài tập 2
 document.getElementById("tinhTienCap").onclick = function () {
   // Đầu vào
   var mySelect = document.getElementById("mySelect").value;
+  console.log(mySelect)
   var maKhanhHang = document.getElementById("maKhanhHang").value;
   var soKenh = document.getElementById("soKenh").value * 1;
   var soKetNoi = document.getElementById("soKetNoi").value * 1;
